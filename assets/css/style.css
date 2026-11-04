@@ -4,6 +4,10 @@ body {
     line-height: 150%;
 }
 
+main div {
+    overflow: hidden;
+}
+
 
 /* BANNER STARTED */
 
@@ -74,11 +78,12 @@ select {
     font-style: normal;
     font-size: large;
 }
-select:hover{
-  cursor: pointer;
+
+select:hover {
+    cursor: pointer;
 }
 
-#short-menu ul{
+#short-menu ul {
     display: flex;
     flex-direction: column;
     display: none;
@@ -100,7 +105,7 @@ h1 {
 }
 
 .head-line p {
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 
@@ -134,7 +139,7 @@ h1 {
 
 @media screen and (min-width:320px) and (max-width:820px) {
 
-    
+
     .short-menu {
         display: block;
         margin-right: 40px;
@@ -196,8 +201,9 @@ h1 {
     }
 
     .head-line p {
-        margin-top: -20px;
+        margin-top: 0px;
         text-align: center;
+        font-size: x-small;
     }
 }
 
@@ -280,6 +286,7 @@ h1 {
         text-align: center;
         font-size: x-small;
         width: 80%;
+        margin-left: 1%;
         padding: 20px;
 
 
@@ -320,31 +327,26 @@ h1 {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 320px) and (max-width: 820px) {
+@media screen and (min-width: 320px) and (max-width: 820px) {
 
-    .img {
-
-        width: 100%;
-    }
-
-    .sub-2 {
-        width: 100%;
-    }
+  .img,
+.sub-2 {
+    width: 100%;
+}
 
 }
 
 .img img {
     display: block;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     background-position: center;
 }
 
 @media screen and (min-width: 320px) and (max-width:820px) {
     .img img {
-
-        width: 100vw;
+        
+        width: 100%;
         background-position: center;
 
 
@@ -404,7 +406,7 @@ h1 {
     padding-left: 100px;
     padding-right: 50px;
     text-align: left;
-    width: 400px;
+    max-width: 400px;
 
 }
 
@@ -496,8 +498,6 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 80px;
         text-align: center;
-        margin-left: 100px;
-        margin-right: 100px;
         width: auto;
 
 
@@ -553,7 +553,7 @@ h1 {
 
 @media screen and (min-width: 320px) and (max-width:820px) {
     #protein {
-        padding-left: 5%;
+        padding-left: 30%;
         padding-right: 32%;
 
     }
@@ -568,6 +568,12 @@ h1 {
     padding-left: 5px;
 }
 
+@media screen and (min-width: 320px) and (max-width:820px) {
+    #fat {
+        padding-left: 45px;
+    }
+}
+
 #sugar {
     padding-left: 15px;
 
@@ -575,7 +581,7 @@ h1 {
 
 @media screen and (min-width: 320px) and (max-width:820px) {
     #sugar {
-        padding-left: 15px;
+        padding-left: 50px;
         margin-bottom: 30px;
 
     }
@@ -738,14 +744,14 @@ section .section-5 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 820px) {
-    .section-5 {
-       
+    section .section-5 {
+
         padding-top: 50px;
         padding-bottom: 50px;
         font-weight: 400;
-        padding-left: 250%;
-        padding-right: 250%;
-        padding: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
 }
 
@@ -763,17 +769,16 @@ section .section-5 {
 
 .contents-5 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-top: 20px;
+    gap: 30px 20px;
 }
 
 
 @media screen and (min-width:320px) and (max-width: 820px) {
     .contents-5 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-top: 20px;
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 10px;
     }
 
     .contents-5 .desc-5 h3 {
@@ -797,20 +802,13 @@ section .section-5 {
     }
 
     #resource img {
-        width: 30%;
+        width: 60%;
         height: auto;
     }
 }
 
 @media screen and (min-width:320px) and (max-width: 820px) {
-    .contents-5 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-top: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
 
-    }
 
     .contents-5 img {
         margin-top: 20px;
@@ -822,6 +820,7 @@ section .section-5 {
     width: 13%;
     height: auto;
 }
+
 
 .desc-5 h3 {
     font-weight: 700;
@@ -835,15 +834,21 @@ section .section-5 {
 
 
     }
+
+    .images-5 img {
+        width: 50%;
+        height: auto;
+    }
 }
 
 .desc-5 p {
-    display: flex;
-
-    font-style: normal;
-    font-size: small;
-    width: 220px;
-    margin-top: 2px;
+    width: 100%;
+    max-width: 220px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    display: block;
+    text-align: center;
 
 }
 
@@ -879,7 +884,7 @@ section .section-5 {
 /* ICONS OF 5 */
 
 #production img {
-    width: 15%;
+    width: 13%;
     height: auto;
 }
 
@@ -908,6 +913,40 @@ section .section-5 {
 
 .resource .desc-5 {
     padding-top: 2px;
+}
+
+@media screen and (min-width: 320px) and (max-width:820px) {
+    #production img {
+        width: 53%;
+        height: auto;
+    }
+
+    #cost img {
+        width: 57%;
+        height: auto;
+    }
+
+    #vegan img {
+        width: 57%;
+        height: auto;
+    }
+
+    #resource img {
+        width: 58%;
+        height: auto;
+    }
+
+    .cost .desc-5 {
+        padding-top: 13px;
+    }
+
+    .vegan .desc-5 {
+        padding-top: 5px;
+    }
+
+    .resource .desc-5 {
+        padding-top: 2px;
+    }
 }
 
 /* ICONS Ended */
@@ -997,7 +1036,7 @@ section .section-5 {
     }
 
     .content-6 h2 {
-       text-align: center;
+        text-align: center;
         font-size: small;
     }
 
@@ -1225,6 +1264,8 @@ section .section-5 {
     font-weight: 400;
     font-style: normal;
     line-height: 150%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .head-9 {
@@ -1232,7 +1273,7 @@ section .section-5 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    
 }
 
 .head-9 h2 {
@@ -1310,8 +1351,8 @@ section .section-5 {
     }
 
     .head-9 p {
-        width: 50%;
-
+        width: 65%;
+        font-size: small;
     }
 
     .content-91 {
@@ -1364,3 +1405,128 @@ section .section-5 {
         padding-top: 5%;
     }
 }
+
+
+/* SECTION - 9 ENDED */
+
+
+/* SECTION -10 STARTED */
+
+.section-10 {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.image-10 img {
+    width: 280px;
+    height: auto;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.image-10 {
+    width: 100%;
+}
+
+.content-10 {
+    width: 100%;
+    text-align: left;
+}
+
+.image-10,
+.content-10 {
+    width: 50%;
+}
+
+.content-10 h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Permanent Marker", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    max-width: 450px;
+    line-height: 150%;
+}
+
+.content-10 p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: smaller;
+    max-width: 450px;
+}
+
+.button-10 button{
+    border-style: solid;
+    background-color: transparent;
+    border: 1 black;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+
+}
+
+@media screen and (min-width:320px) and (max-width:820px) {
+    .section-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.image-10 img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 0;
+    height: auto;
+
+}
+
+.image-10 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-10 {
+    width: 100%;
+    text-align: center;
+}
+
+.content-10 h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    max-width: 90%;
+    padding: 10%;
+}
+
+.content-10 p {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: small;
+    max-width: 90%;
+}
+
+.button-10 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 30%;
+
+}
+}
+
+/* SECTION 10 ENDED */
