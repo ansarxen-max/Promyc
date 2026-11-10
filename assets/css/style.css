@@ -249,14 +249,13 @@ h1 {
 .section-1 p {
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: small;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 25%;
+    width: 45%;
 
 }
 
@@ -1526,6 +1525,10 @@ section .section-5 {
     }
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 /* SECTION 10 ENDED */
 
 
@@ -1583,9 +1586,8 @@ section .section-5 {
 }
 
 .footer-top12 {
-    
+    margin-top: 3%;
     padding-right: 5%;
-    /* margin-left: 15%; */
     color: white;
     width: 100%;
 }
@@ -1632,4 +1634,80 @@ hr{
 
 .email input:hover{
     color: white;
+}
+
+
+/* footer bottom-right one */
+
+.footer-bottom{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.bottom-left{
+    display: flex;
+    width: 100%;
+}
+
+.bottom-left1{
+    width: 100%;
+}
+.bottom-left2{
+    width: 100%;
+}
+
+.bottom-left1,
+.bottom-left2{
+    width: 40%;
+}
+
+.footer-connect{
+    margin-top: -8%;
+}
+
+.footer-connect img{
+    width: 5%;
+    margin-top: -1%;
+}
+
+.footer-connect h5{
+    font-size: x-small;
+}
+
+.footer-connect span{
+    margin-left: 1%;
+    font-size: x-small;
+}
+
+#foot-mail{
+    width: 8%;
+    margin-top: 1.5%;
+    margin-left: -0.5%;
+}
+
+#foot-mail span{
+    display: flex;
+    align-items: center;
+}
+
+.bottom-left2 a{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    margin-top: 3%;
+    
+}
+
+/* bottom-rught */
+
+.bottom-right{
+   display: flex;
+   width: 100%;
+   margin-right: 10%;
+}
+
+.bottom-left,
+.bottom-right{
+    width: 50%;
 }
