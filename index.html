@@ -32,31 +32,50 @@
                         <div class="header">
 
                             <div class="main-logo">
-                                <div><img src="assets/Images/main-logo.png" alt="main-logo"></div>
+                                <div class="mlogo"><img src="assets/Images/main-logo.png" alt="main-logo" ></div>
+
+
+                                <div class="nav-menus">
+                                  
+
+                                    <ul>
+                                        <li><a href="#">Fugi</a></li>
+                                        <li><a href="#">Promyc®</a></li>
+                                        <li><select name="TechMyc" style="font-size: x-large;">
+                                                <option value="TechMyc" ><a href="">TechMyc</a></option>
+                                                <option value="TechMyc"><a href="">TechMyc</a></option>
+                                            </select></li>
+                                        <li><a href="#">MycoTalks</a></li>
+                                        <li><a href="#" style="width: 100%;">About Us</a></li>
+                                        <li><select name="Contact" style="font-size: x-large;">
+                                                <option value="Contact"><a href="#">Contact</a></option>
+                                                <option value="Contact"><a href="#">Contact</a></option>
+                                            </select></li>
+                                        </li>
+                                        <li><img src="assets/Images/search.png" alt="search-icon" id="search"></li>
+
+                                    </ul>
+
+
+                                      <!-- Top Navigation Menu -->
+                                    <div class="topnav">
+                                        <a href="#home" class="active">Logo</a>
+                                        <!-- Navigation links (hidden by default) -->
+                                        <div id="myLinks">
+                                            <a href="#news">Fugi</a>
+                                            <a href="#contact">Promyc®</a>
+                                            <a href="#about">MycoTalks</a>
+                                            <a href="#about">About Us</a>
+                                            <a href="#about">Contact</a>
+                                        </div>
+                                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
                             </div>
-
-                            <div>
-                                <ul>
-                                    <li><a href="">Fugi</a></li>
-                                    <li><a href="">Promyc®</a></li>
-                                    <li><select name="TechMyc">
-                                            <option value="TechMyc"><a href="">TechMyc</a></option>
-                                            <option value="TechMyc"><a href="">TechMyc</a></option>
-                                        </select></li>
-                                    <li><a href="">MycoTalks</a></li>
-                                    <li><a href="">About Us</a></li>
-                                    <li><select name="Contact">
-                                            <option value="Contact"><a href="">Contact</a></option>
-                                            <option value="Contact"><a href="">Contact</a></option>
-                                        </select></li>
-                                    </li>
-                                    <li><img src="assets/Images/search.png" alt="search-icon"></li>
-
-                                </ul>
-                            </div>
-
-                        </div>
                     </header>
 
 
@@ -646,7 +665,9 @@
                     </div>
 
                     <div class="bottom-left2">
-                        <div><h3>MYCORENA</h3></div>
+                        <div>
+                            <h3>MYCORENA</h3>
+                        </div>
                         <div>
                             <a href="#">About Us</a>
                             <a href="#">Contact Us</a>
@@ -659,7 +680,9 @@
 
                 <div class="bottom-right">
                     <div class="bottom-left2">
-                        <div><h3>MYCORENA</h3></div>
+                        <div>
+                            <h3>MYCORENA</h3>
+                        </div>
                         <div>
                             <a href="#">FAQ</a>
                             <a href="#">Promyc</a>
@@ -669,7 +692,9 @@
 
 
                     <div class="bottom-left2">
-                        <div><h3>MYCORENA</h3></div>
+                        <div>
+                            <h3>MYCORENA</h3>
+                        </div>
                         <div>
                             <a href="#">Face Book</a>
                             <a href="#">Instegram</a>
@@ -682,10 +707,22 @@
                 </div>
             </div>
 
-            
+
 
         </div>
     </footer>
 </body>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>
